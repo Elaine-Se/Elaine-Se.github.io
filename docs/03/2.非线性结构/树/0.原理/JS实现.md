@@ -6,7 +6,7 @@
 * 左指针（right）
 * 右指针（right）
 
-<img width = 560px src = "/docs/00.img/树实现/树实现1.png"></img>
+<img width = 560px src = "00.img/树实现/树实现1.png"></img>
 
 * 封装代码：
 
@@ -59,13 +59,13 @@
   * 当node无左子节点时，直接插入；
   * 当node有左子节点时，递归调用insertNode(),直到遇到无左子节点，则成功插入newNode，递归停止
 
-<img width = 560px src = "/docs/00.img/树实现/树实现2.png"></img>
+<img width = 560px src = "00.img/树实现/树实现2.png"></img>
 
 * 当`newNode.key >= node.key`，则向右查找:
   * 当node无右子节点时，直接插入；
   * 当node有右子节点时，依然递归调用insertNode(),直到遇到传入insertNode方法的node无右子节点，成功插入newNode，递归停止
 
-<img width = 560px src = "/docs/00.img/树实现/树实现3.png"></img>
+<img width = 560px src = "00.img/树实现/树实现3.png"></img>
 
 - insertNode()代码实现：
 
@@ -375,7 +375,7 @@
 2. 然后，遍历其左子树；
 3. 最后，遍历其右子树
 
-<img width = 560px src = "/docs/00.img/树实现/树实现4.png"></img>
+<img width = 560px src = "00.img/树实现/树实现4.png"></img>
 
 * 代码实现：
 ```javascript
@@ -437,18 +437,18 @@
 
 遍历以下二叉搜索树为例：
 
-  <img width = 560px src = "/docs/00.img/树实现/树实现5.png"></img>
+  <img width = 560px src = "00.img/树实现/树实现5.png"></img>
 
   * 首先调用preOrderTraversal方法，在方法里再调用preOrderTraversalNode方法用于遍历二叉搜索树。
   * 在preOrderTraversalNode方法中，递归1负责遍历左子节点，递归2负责遍历右子节点。
-      <img width = 760px src = "/docs/00.img/树实现/树实现6.png"></img>
+      <img width = 760px src = "00.img/树实现/树实现6.png"></img>
 
       1. 先执行递归 1，记为 A()，执行过程如上图所示，依次遍历左节点：11,7,5,3。
       2. 遍历 3 的左节点，但是 3 的左节点为空，递归1结束
       3. 向上返回，执行递归2，遍历 3 的右节点，3 的右节点为空，继续向上返回。
       4. 依次遍历5,7,11的右节点，而在右节点中继续递归。
 
-      <img width = 860px src = "/docs/00.img/树实现/树实现7.png"></img>
+      <img width = 860px src = "00.img/树实现/树实现7.png"></img>
 
 #### **中序遍历: inOrderTraverse**
 ##### 遍历过程
@@ -511,7 +511,7 @@
 
 遍历以下二叉搜索树为例：
 
-  <img width = 560px src = "/docs/00.img/树实现/树实现8.png"></img>
+  <img width = 560px src = "00.img/树实现/树实现8.png"></img>
 
   输出节点的顺序应为：3 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13 -> 14 -> 15 -> 18 -> 20 -> 25 。
 
@@ -578,7 +578,7 @@
 
 遍历以下二叉搜索树为例：
 
-  <img width = 560px src = "/docs/00.img/树实现/树实现9.png"></img>
+  <img width = 560px src = "00.img/树实现/树实现9.png"></img>
   
   输出节点的顺序应为：3 -> 6 -> 5 -> 8 -> 10 -> 9 -> 7 -> 12 -> 14 -> 13 -> 18 -> 25 -> 20 -> 15 -> 11 。
 
